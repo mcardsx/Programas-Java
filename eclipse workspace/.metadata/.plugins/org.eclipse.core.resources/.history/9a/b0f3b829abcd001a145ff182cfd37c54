@@ -1,0 +1,6 @@
+package br.com.strategy;
+
+public class TestaCalculadorDeImposto {
+
+	Orcamento orcamento = new Orcamento(1000.0);
+}

@@ -1,0 +1,7 @@
+package br.com.strategy;
+
+public interface Imposto {
+	
+	public void getImposto(Orcamento orcamento);
+		
+}

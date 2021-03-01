@@ -1,0 +1,15 @@
+package br.com.strategy;
+
+public class ISS implements Imposto{
+
+	private Orcamento orcamento;
+	
+	public ISS(Orcamento  orcamento) {
+		this.orcamento = orcamento;
+	}
+
+	@Override
+	public double getImposto() {
+		return orcamento.getValor() * 0.06 + 50;
+	}
+}

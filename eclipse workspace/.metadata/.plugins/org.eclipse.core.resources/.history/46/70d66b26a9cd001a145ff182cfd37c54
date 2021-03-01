@@ -1,0 +1,13 @@
+package br.com.strategy;
+
+public class CalculadorDeImpostos {
+
+	private Orcamento orcamento;
+	private Imposto imposto;
+
+	public Double CalculadorDeImpostos(Orcamento orcamento, Imposto imposto) {
+		this.orcamento = orcamento;
+		this.imposto = imposto;
+		
+	}
+}

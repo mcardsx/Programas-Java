@@ -1,0 +1,9 @@
+package br.com.strategy;
+
+public class CalculadorDeImpostos {
+	
+	public Double CalculaImposto(Orcamento orcamento, Imposto imposto) {
+		
+			
+	return double regraDeImposto = imposto.getImposto();}
+}

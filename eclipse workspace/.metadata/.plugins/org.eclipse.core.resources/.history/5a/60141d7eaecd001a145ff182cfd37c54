@@ -1,0 +1,11 @@
+package br.com.strategy;
+
+public class ICCC implements Imposto{
+
+	@Override
+	public double getImposto(Orcamento orcamento) {
+		
+		return orcamento.getValor();
+	}
+
+}

@@ -1,0 +1,15 @@
+package br.com.strategy;
+
+public class TestaCalculadorDeImposto {
+
+	public static void main(String[] args) {
+
+		Orcamento orcamento = new Orcamento(1000.00);
+		Imposto impostoICMS = new ICMS(orcamento);
+		Imposto impostoISS = new ISS(orcamento);
+		CalculadorDeImpostos cdi = new CalculadorDeImpostos();
+
+		cdi.CalculaImposto(orcamento, impostoICMS);
+		cdi.CalculaImposto(orcamento, impostoISS);
+	}
+}

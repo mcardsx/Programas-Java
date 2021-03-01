@@ -1,0 +1,21 @@
+package br.com.strategy;
+
+public class TestaCalculadorDeImposto {
+
+	public static void main(String[] args) {
+
+		Orcamento orcamento = new Orcamento(1000.00);
+		Imposto impostoICMS = new ICMS();
+		Imposto impostoISS = new ISS();
+		Imposto impostoICCC = new ICCC();
+		CalculadorDeImpostos cdi = new CalculadorDeImpostos();
+
+		Double ICMS = cdi.CalculaImposto(orcamento, impostoICMS);
+		Double ISS =  cdi.CalculaImposto(orcamento, impostoISS);
+		Double ICCC = cdi.CalculaImposto(orcamento, impostoICCC);
+		
+		System.out.println(ICMS);
+		System.out.println(ISS);
+		System.out.println(ICCC);
+	}
+}
